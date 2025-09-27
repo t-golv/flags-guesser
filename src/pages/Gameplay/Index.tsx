@@ -222,7 +222,7 @@ export default function Gameplay() {
 
   // --- Stop everything on route change ---
   createEffect(() => {
-    if (location.pathname !== "/play") {
+    if (location.pathname !== "/flags-guesser/play") {
       isActive = false;
       cancelAnimationFrame(rafId);
       clearInterval(countdownTimer);
@@ -232,9 +232,9 @@ export default function Gameplay() {
   });
 
   onMount(() => {
-    loadSound("correct", "/sounds/correct.mp3");
-    loadSound("wrong", "/sounds/wrong.mp3");
-    loadSound("notification", "/sounds/notification.mp3");
+    loadSound("correct", "flags-guesser//sounds/correct.mp3");
+    loadSound("wrong", "/flags-guesser/sounds/wrong.mp3");
+    loadSound("notification", "/flags-guesser/sounds/notification.mp3");
     window.addEventListener("keydown", handleKeyDown);
     startCountdown();
   });
