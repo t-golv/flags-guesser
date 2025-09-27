@@ -5,4 +5,4 @@ import { Router } from "@solidjs/router";
 import { routes } from "./Routes";
 const root = document.getElementById("root");
 
-render(() => <Router>{routes}</Router>, root!);
+render(() => <Router base="/flags-guesser/">{routes}</Router>, root!);
