@@ -232,7 +232,7 @@ export default function Gameplay() {
   });
 
   onMount(() => {
-    loadSound("correct", "flags-guesser//sounds/correct.mp3");
+    loadSound("correct", "/flags-guesser/sounds/correct.mp3");
     loadSound("wrong", "/flags-guesser/sounds/wrong.mp3");
     loadSound("notification", "/flags-guesser/sounds/notification.mp3");
     window.addEventListener("keydown", handleKeyDown);
