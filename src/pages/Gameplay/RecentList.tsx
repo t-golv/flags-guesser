@@ -13,7 +13,7 @@ export default function RecentList(props: { recent: RecentItem[] }) {
                 <img
                   loading="lazy"
                   class="w-14 unselectable border-2 border-slate-700 rounded-sm object-cover h-9"
-                  src={r.flag}
+                  src={"/flags-guesser/" + r.flag}
                 />
               </div>
               <p class="flex-1 text-sm">{r.name}</p>

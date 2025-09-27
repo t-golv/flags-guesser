@@ -22,6 +22,13 @@ const Menu: Component<{}> = () => {
       >
         Settings
       </Button>
+      <Button
+        onClick={() => {
+          navigate("all-flags");
+        }}
+      >
+        All Flags
+      </Button>
     </div>
   );
 };

@@ -33,7 +33,7 @@ export default function FlagDisplay(props: {
             class="inline-block bg-black shadow-xl rounded-lg overflow-hidden z-1"
           >
             <img
-              src={props.current!.flag}
+              src={"/flags-guesser/" + props.current!.flag}
               alt={props.current!.name}
               class="unselectable transition-opacity w-full h-auto max-h-[500px] object-contain"
               classList={{
@@ -44,7 +44,7 @@ export default function FlagDisplay(props: {
 
           {/* Blurred background */}
           <img
-            src={props.current!.flag}
+            src={"/flags-guesser/" + props.current!.flag}
             class="absolute unselectable blur-[7rem] rounded-[100%] min-w-[105%] min-h-[105%]  object-contain opacity-25  z-0"
           />
 
@@ -62,7 +62,7 @@ export default function FlagDisplay(props: {
           value={props.input}
           onInput={props.onInput}
           placeholder="Flag name..."
-          disabled={props.revealed !== null} // disable while showing answer
+          disabled={props.revealed !== null}
           class="w-[480px] z-1 px-6 py-4 rounded-4xl bg-slate-800/50 border border-slate-600 text-white text-center text-xl focus:outline-none focus:border-purple-500 disabled:opacity-0"
           autocomplete="off"
         />

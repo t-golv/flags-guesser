@@ -9,7 +9,7 @@ export default function AllFlags() {
           {(flag) => (
             <div class="flex flex-col items-center text-center p-2 bg-neutral-800 rounded-md ">
               <img
-                src={flag.flag}
+                src={"/flags-guesser/" + flag.flag}
                 alt={flag.name}
                 class="w-full aspect-video object-contain rounded "
                 loading="lazy"
