@@ -7,14 +7,14 @@ export const routes: RouteDefinition[] = [
     path: "/",
     component: App,
     children: [
-      { path: "/", component: lazy(() => import("./pages/Menu")) },
-      { path: "/settings", component: lazy(() => import("./pages/Settings")) },
+      { path: "", component: lazy(() => import("./pages/Menu")) },
+      { path: "settings", component: lazy(() => import("./pages/Settings")) },
       {
-        path: "/play",
+        path: "play",
         component: lazy(() => import("./pages/Gameplay/Index")),
       },
       {
-        path: "/all-flags",
+        path: "all-flags",
         component: lazy(() => import("./pages/AllFlags")),
       },
     ],
