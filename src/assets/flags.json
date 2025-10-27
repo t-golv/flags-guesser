@@ -2152,5 +2152,305 @@
     "name": "Zimbabwe",
     "flag": "/flags/zimbabwe.webp",
     "tags": ["country"]
+  },
+  {
+    "name": "Yakutsk",
+    "flag": "/flags/yakutsk.webp",
+    "tags": ["new-flags"]
+  },
+  {
+    "name": "Yukon",
+    "flag": "/flags/yukon.webp",
+    "tags": ["new-flags"]
+  },
+  {
+    "name": "Wiltshire",
+    "flag": "/flags/wiltshire.webp",
+    "tags": ["new-flags"]
+  },
+  {
+    "name": "Westmorland",
+    "flag": "/flags/westmorland.webp",
+    "tags": ["new-flags"]
+  },
+  {
+    "name": "Warwickshire",
+    "flag": "/flags/warwickshire.webp",
+    "tags": ["new-flags"]
+  },
+  {
+    "name": "Veneto",
+    "flag": "/flags/veneto.webp",
+    "tags": ["new-flags"]
+  },
+  {
+    "name": "Ufa",
+    "flag": "/flags/ufa.webp",
+    "tags": ["new-flags"]
+  },
+  {
+    "name": "Surrey",
+    "flag": "/flags/surrey.webp",
+    "tags": ["new-flags"]
+  },
+  {
+    "name": "Suffolk",
+    "flag": "/flags/suffolk.webp",
+    "tags": ["new-flags"]
+  },
+  {
+    "name": "Staffordshire",
+    "flag": "/flags/staffordshire.webp",
+    "tags": ["new-flags"]
+  },
+  {
+    "name": "Somerset",
+    "flag": "/flags/somerset.webp",
+    "tags": ["new-flags"]
+  },
+  {
+    "name": "Shropshire",
+    "flag": "/flags/shropshire.webp",
+    "tags": ["new-flags"]
+  },
+  {
+    "name": "Shetland",
+    "flag": "/flags/shetland.webp",
+    "tags": ["new-flags"]
+  },
+  {
+    "name": "Rutland",
+    "flag": "/flags/rutland.webp",
+    "tags": ["new-flags"]
+  },
+  {
+    "name": "Philadelphia",
+    "flag": "/flags/philadelphia.webp",
+    "tags": ["new-flags"]
+  },
+  {
+    "name": "Oxfordshire",
+    "flag": "/flags/oxfordshire.webp",
+    "tags": ["new-flags"]
+  },
+  {
+    "name": "Orkney",
+    "flag": "/flags/orkney.webp",
+    "tags": ["new-flags", "cross"]
+  },
+  {
+    "name": "Omsk",
+    "flag": "/flags/omsk.webp",
+    "tags": ["new-flags"]
+  },
+  {
+    "name": "Nunavut",
+    "flag": "/flags/nunavut.webp",
+    "tags": ["new-flags"]
+  },
+  {
+    "name": "Novosibirsk",
+    "flag": "/flags/novosibirsk.webp",
+    "tags": ["new-flags"]
+  },
+  {
+    "name": "Nottinghamshire",
+    "flag": "/flags/nottinghamshire.webp",
+    "tags": ["new-flags"]
+  },
+  {
+    "name": "Northwest Territories",
+    "flag": "/flags/northwest-territories.webp",
+    "tags": ["new-flags"]
+  },
+  {
+    "name": "Northumberland",
+    "flag": "/flags/northumberland.webp",
+    "tags": ["new-flags"]
+  },
+  {
+    "name": "Northamptonshire",
+    "flag": "/flags/northamptonshire.webp",
+    "tags": ["new-flags"]
+  },
+  {
+    "name": "Norfolk",
+    "flag": "/flags/norfolk.webp",
+    "tags": ["new-flags"]
+  },
+  {
+    "name": "Moose Jaw",
+    "flag": "/flags/moose-jaw.webp",
+    "tags": ["new-flags"]
+  },
+  {
+    "name": "Misiones",
+    "flag": "/flags/misiones.webp",
+    "tags": ["new-flags"]
+  },
+  {
+    "name": "Merseyside",
+    "flag": "/flags/merseyside.webp",
+    "tags": ["new-flags"]
+  },
+  {
+    "name": "Ljubljana",
+    "flag": "/flags/ljubljana.webp",
+    "tags": ["new-flags"]
+  },
+  {
+    "name": "Leicestershire",
+    "flag": "/flags/leicestershire.webp",
+    "tags": ["new-flags"]
+  },
+  {
+    "name": "Lancashire",
+    "flag": "/flags/lancashire.webp",
+    "tags": ["new-flags"]
+  },
+  {
+    "name": "Kent",
+    "flag": "/flags/kent.webp",
+    "tags": ["new-flags"]
+  },
+  {
+    "name": "Jubaland",
+    "flag": "/flags/jubaland.webp",
+    "tags": ["new-flags"]
+  },
+  {
+    "name": "Isles of Scilly",
+    "flag": "/flags/isles-of-scilly.webp",
+    "tags": ["new-flags"]
+  },
+  {
+    "name": "Isle of Wight",
+    "flag": "/flags/isle-of-wight.webp",
+    "tags": ["new-flags"]
+  },
+  {
+    "name": "Huntingdonshire",
+    "flag": "/flags/huntingdonshire.webp",
+    "tags": ["new-flags"]
+  },
+  {
+    "name": "Hertfordshire",
+    "flag": "/flags/hertfordshire.webp",
+    "tags": ["new-flags"]
+  },
+  {
+    "name": "Herefordshire",
+    "flag": "/flags/herefordshire.webp",
+    "tags": ["new-flags"]
+  },
+  {
+    "name": "Hampshire",
+    "flag": "/flags/hampshire.webp",
+    "tags": ["new-flags"]
+  },
+  {
+    "name": "Greater Manchester",
+    "flag": "/flags/greater-manchester.webp",
+    "tags": ["new-flags"]
+  },
+  {
+    "name": "Greater London",
+    "flag": "/flags/greater-london.webp",
+    "tags": ["new-flags"]
+  },
+  {
+    "name": "Gloucestershire",
+    "flag": "/flags/gloucestershire.webp",
+    "tags": ["new-flags"]
+  },
+  {
+    "name": "Espirito Santo",
+    "flag": "/flags/espirito-santo.webp",
+    "tags": ["new-flags"]
+  },
+  {
+    "name": "Dorset",
+    "flag": "/flags/dorset.webp",
+    "tags": ["new-flags"]
+  },
+  {
+    "name": "Devon",
+    "flag": "/flags/devon.webp",
+    "tags": ["new-flags"]
+  },
+  {
+    "name": "Derbyshire",
+    "flag": "/flags/derbyshire.webp",
+    "tags": ["new-flags"]
+  },
+  {
+    "name": "County Durham",
+    "flag": "/flags/county-durham.webp",
+    "tags": ["new-flags"]
+  },
+  {
+    "name": "Cornwall",
+    "flag": "/flags/cornwall.webp",
+    "tags": ["new-flags"]
+  },
+  {
+    "name": "Chicago",
+    "flag": "/flags/chicago.webp",
+    "tags": ["new-flags"]
+  },
+  {
+    "name": "Cheshire",
+    "flag": "/flags/cheshire.webp",
+    "tags": ["new-flags"]
+  },
+  {
+    "name": "Cambridgeshire",
+    "flag": "/flags/cambridgeshire.webp",
+    "tags": ["new-flags"]
+  },
+  {
+    "name": "Calgary",
+    "flag": "/flags/calgary.webp",
+    "tags": ["new-flags"]
+  },
+  {
+    "name": "Buffalo",
+    "flag": "/flags/buffalo.webp",
+    "tags": ["new-flags"]
+  },
+  {
+    "name": "Buckinghamshire",
+    "flag": "/flags/buckinghamshire.webp",
+    "tags": ["new-flags"]
+  },
+  {
+    "name": "Bristol",
+    "flag": "/flags/bristol.webp",
+    "tags": ["new-flags"]
+  },
+  {
+    "name": "Birmingham",
+    "flag": "/flags/birmingham.webp",
+    "tags": ["new-flags"]
+  },
+  {
+    "name": "Berkshire",
+    "flag": "/flags/berkshire.webp",
+    "tags": ["new-flags"]
+  },
+  {
+    "name": "Bedfordshire",
+    "flag": "/flags/bedfordshire.webp",
+    "tags": ["new-flags"]
+  },
+  {
+    "name": "Bangkok",
+    "flag": "/flags/bangkok.webp",
+    "tags": ["new-flags"]
+  },
+  {
+    "name": "Baltimore",
+    "flag": "/flags/baltimore.webp",
+    "tags": ["new-flags"]
   }
 ]

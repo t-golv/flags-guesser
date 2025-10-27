@@ -60,7 +60,6 @@ export default function Gameplay() {
     wrong?: boolean;
   }) => setRecent((r) => [item, ...r].slice(0, 8));
 
-  // --- Pick a new flag avoiding recent ---
   const pickNextFlag = () => {
     const recentNames = recent().map((r) => r.name);
     let candidate: Flag | null = null;
@@ -68,12 +67,11 @@ export default function Gameplay() {
     do {
       candidate = randomFlag();
       tries++;
-      if (tries > 50) break; // fallback
+      if (tries > 50) break;
     } while (recentNames.includes(candidate.name));
     return candidate;
   };
 
-  // --- Countdown before game starts ---
   const startCountdown = () => {
     if (!isActive) return;
     setPhase("countdown");
@@ -97,7 +95,6 @@ export default function Gameplay() {
     }, 1000);
   };
 
-  // --- Start a round ---
   const startRound = () => {
     if (!isActive) return;
     setPhase("playing");
@@ -105,29 +102,29 @@ export default function Gameplay() {
     setNextFlag(null);
     setInput("");
     setRevealed(null);
+
     startTime = performance.now();
     endTime = startTime + settings.timeMs;
     setTimeLeft(settings.timeMs);
+
     inputRef?.focus();
-    rafId = requestAnimationFrame(tick);
+    rafId = requestAnimationFrame(updateTimer);
   };
 
-  // --- Timer tick ---
-  const tick = (now: number) => {
+  const updateTimer = (now: number) => {
     if (!isActive || phase() !== "playing") return;
     const remaining = Math.max(0, endTime - now);
     setTimeLeft(remaining);
+
     if (remaining <= 0) handleTimeout();
-    else rafId = requestAnimationFrame(tick);
+    else rafId = requestAnimationFrame(updateTimer);
   };
 
-  // --- Reveal answer and optionally end game ---
   const revealAnswerAndNext = (endGame = false, finalStreak?: number) => {
     setRevealed(current()!.name);
     setInput("");
     cancelAnimationFrame(rafId);
 
-    // Pre-select next flag if not endGame
     if (!endGame) setNextFlag(pickNextFlag());
 
     nextFlagTimeout = setTimeout(() => {
@@ -143,7 +140,6 @@ export default function Gameplay() {
     }, 3000);
   };
 
-  // --- Timeout handler ---
   const handleTimeout = () => {
     if (!isActive) return;
     const currentStreak = streak();
@@ -167,10 +163,9 @@ export default function Gameplay() {
     }
   };
 
-  // --- Enter key handler ---
   const handleKeyDown = (e: KeyboardEvent) => {
     if (!isActive || phase() !== "playing") return;
-    if (revealed()) return; // prevent spamming while answer is revealed
+    if (revealed()) return;
     if (e.key !== "Enter") return;
 
     const val = input().trim().toLowerCase();
@@ -185,14 +180,14 @@ export default function Gameplay() {
         flag: current()!.flag,
         time: guessTime,
       });
-      const nextStreak = currentStreak + 1;
-      setStreak(nextStreak);
+      setStreak(currentStreak + 1);
 
-      if (settings.endMode === "streak" && nextStreak >= settings.streakGoal) {
-        revealAnswerAndNext(true, nextStreak);
-      } else {
-        revealAnswerAndNext();
-      }
+      if (
+        settings.endMode === "streak" &&
+        currentStreak + 1 >= settings.streakGoal
+      ) {
+        revealAnswerAndNext(true, currentStreak + 1);
+      } else revealAnswerAndNext();
     } else {
       playSound("wrong");
       pushRecent({
@@ -220,7 +215,6 @@ export default function Gameplay() {
     startCountdown();
   };
 
-  // --- Stop everything on route change ---
   createEffect(() => {
     if (location.pathname !== "/flags-guesser/play") {
       isActive = false;

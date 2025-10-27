@@ -36,17 +36,12 @@ export default function FlagDisplay(props: {
               src={"/flags-guesser/" + props.current!.flag}
               alt={props.current!.name}
               class="unselectable transition-opacity w-full h-auto max-h-[500px] object-contain"
+              decoding="async"
               classList={{
                 "opacity-50": !!props.revealed,
               }}
             />
           </div>
-
-          {/* Blurred background */}
-          <img
-            src={"/flags-guesser/" + props.current!.flag}
-            class="absolute unselectable blur-[7rem] rounded-[100%] min-w-[105%] min-h-[105%]  object-contain opacity-25  z-0"
-          />
 
           {/* Correct answer reveal */}
           <Show when={props.revealed}>
